@@ -1,0 +1,49 @@
+extends layout
+
+block content
+	section#allianceSelection.hidden
+		a.red Red Alliance
+		a.blue Blue Alliance
+	section#scouting.hidden
+		span#success.hidden Success
+		div#teams
+			h2 Team
+			a.selected
+			a
+			a
+			span
+		div#auto
+			h2 Auto
+			a(type='1') Tote stack
+			a(type='2') Rake 1
+			a(type='3') Rake 2
+		div#stack
+			h2 stack
+			a.toggle Bin
+			a.toggle Litter
+			select
+				option 1
+				option 2
+				option 3
+				option 4
+				option 5
+				option 6
+			a Scored
+		div#cap
+			h2 Cap
+			a 1
+			a 2
+			a 3
+			a 4
+			a 5
+			a 6
+		div#error
+			h2 Error
+			a(type='1') Dropped stack
+			a(type='2') Dropped bin
+			a(type='3') Knocked over stack
+			a(type='4') Foul
+		a#end End match
+	section#done.hidden
+		h1 No more matches
+	script(src='/javascripts/app.js')
